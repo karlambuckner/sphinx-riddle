@@ -1,10 +1,11 @@
 <h1>Answer the Sphinx's riddles</h1>
 
 <form action="/output" method="post">
-  <h3><span id='riddles'>Answer the following three riddles carefully...you only get two chances per riddle:</span></h3>
+  <h3>Answer the following three riddles carefully...you only get two chances per riddle:</h3>
+  <h3 id="riddle"><%= @display %></h3>
   <div class="form-group">
-    <label for="riddle1">The more you take, the more you leave behind. What am I?</label>
-    <input id="riddle1" name="riddle1" class="form-control" type="text">
+    <label for="answer">Answer</label>
+    <input id="answer" name="answer" class="form-control" type="text">
   </div>
   <button type="submit" class="btn">Answer!</button>
 </form>
